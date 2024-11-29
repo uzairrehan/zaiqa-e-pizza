@@ -69,8 +69,11 @@ function Contacts() {
   return (<>
     <div>Contacts</div>
     {contacts.map((user)=>(
-
-      <Link key={user.name} to={`/contacts/${user.email}`} className="pr-4" >{user.name}</Link>
+      <Link 
+      key={user.name} 
+      to={`/contacts/${user.email}`} 
+      className="pr-4" >{user.name}
+      </Link>
     ))}
   </>
   )

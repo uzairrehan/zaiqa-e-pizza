@@ -4,7 +4,7 @@ function LayoutPage() {
   return (
     <>
     <header>
-        this is HEader
+        Header
     </header>
     <main>
     <Outlet/>
