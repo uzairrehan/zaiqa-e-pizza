@@ -1,3 +1,5 @@
+import { Params } from "react-router";
+
 export type Contacts = {
   name: {
     first: string;
@@ -13,3 +15,9 @@ export type Contacts = {
     thumbnail: string;
   };
 };
+
+
+
+export type userType ={
+  params:Params<string>
+}

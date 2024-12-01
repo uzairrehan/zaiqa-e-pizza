@@ -12,15 +12,15 @@ function Contacts() {
   return (
     <>
       <div className="flex flex-col p-3 gap-4">
-      {users.map((user) => (
-        <Link
-          key={user.login.uuid}
-          to={`/contacts/${user.login.uuid}`}
-          className="pr-4"
-        >
-          {user.name.first} {user.name.last}
-        </Link>
-      ))}
+        {users.map((user) => (
+          <Link
+            key={user.login.uuid}
+            to={`/contacts/${user.login.uuid}`}
+            className="pr-4"
+          >
+            {user.name.first} {user.name.last}
+          </Link>
+        ))}
       </div>
     </>
   );
