@@ -3,7 +3,7 @@ import NotFound from "./pages/NotFound";
 import LayoutPage from "./pages/LayoutPage";
 import DetailedContact from "./pages/DetailedContact";
 import MainPage from "./pages/MainPage";
-import Contacts from "./pages/Contacts";
+import Contacts, { usersLoader } from "./pages/Contacts";
 import About from "./pages/About";
  
 const router = createBrowserRouter(
@@ -16,7 +16,7 @@ const router = createBrowserRouter(
 
       <Route path="" element={<MainPage />} />
 
-      <Route path="contacts" element={<Contacts />} />
+      <Route path="contacts" element={<Contacts />} loader={usersLoader} />
 
       <Route path="contacts/:contactID" element={<DetailedContact />} />
 
