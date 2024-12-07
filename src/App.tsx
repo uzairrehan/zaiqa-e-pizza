@@ -5,15 +5,15 @@ import { Helmet } from "react-helmet";
 
 function App() {
   return (
-    <>
+    <div className="bg-background text-foreground">
       <Helmet>
         <title>zaiqa e pizza</title>
-        <link rel="icon" href="logoo.png!sw800" />
+        <link rel="icon" href="logoo.png" />
       </Helmet>
       <div>
         <RouterProvider router={router} />
       </div>
-    </>
+    </div>
   );
 }
 
